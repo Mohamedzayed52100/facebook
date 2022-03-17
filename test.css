@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    width: 150px;
+    background-color: aqua;
+    position: relative;
+}
+
+div::after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}

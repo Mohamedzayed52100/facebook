@@ -1,0 +1,317 @@
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+     :root {
+        --maincolor: #f0f2f5;
+    }
+    
+    .container {
+        width: 1400px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    
+    ul {
+        list-style-type: none;
+    }
+    
+    body {
+        font-size: 15px;
+        background-color: #f0f2f5;
+    }
+    /*start header*/
+    
+    header {
+        background-color: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 10;
+        box-shadow: 1px 1px 1px rgba(48, 43, 43, 0.164);
+        padding: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .head1 i,
+    .head2 i {
+        display: inline-block;
+        font-size: 20px;
+        background-color: #eee;
+        padding: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+        margin-left: 5px;
+    }
+    
+    .head3 i {
+        font-size: 35px;
+    }
+    
+    .head1>span {
+        background-color: #eee;
+        color: rgb(20, 63, 255);
+        padding: 10px 0;
+        font-size: 20px;
+        border-radius: 20px;
+    }
+    
+    #notfication {
+        position: relative;
+    }
+    
+    #notfication span {
+        position: absolute;
+        top: 0px;
+        left: -6px;
+        color: white;
+        background-color: red;
+        font-size: 10px;
+        padding: 5px 3px;
+        border-radius: 60px;
+    }
+    
+    .head2 i {
+        margin-left: 15px;
+    }
+    
+    .head1 img {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+    }
+    
+    header input {
+        display: inline-block;
+        padding: 10px 50px;
+        border-radius: 50px;
+    }
+    /*end header*/
+    /* start body */
+    
+    body .container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+    
+    body .left,
+    .mid,
+    .right {
+        margin-top: 100px;
+    }
+    
+    body .left ul li {
+        position: relative;
+        margin-top: 20px;
+        width: 230px;
+        cursor: pointer;
+    }
+    
+    .top {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .top p {
+        cursor: pointer;
+    }
+    
+    .top i {
+        margin-left: 8px;
+        cursor: pointer;
+    }
+    
+    body .left ul li:hover {
+        background-color: #f0f2f5;
+        border-radius: 60px;
+    }
+    
+    body .left ul li span {
+        position: absolute;
+        bottom: 20px;
+        left: 60px;
+    }
+    
+    body .left ul li span::after {
+        content: "";
+        position: absolute;
+        right: 155px;
+        top: 19px;
+        width: 1px;
+        height: 1px;
+        background-color: green;
+        border-radius: 50%;
+    }
+    
+    body .left ul li span::after {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        background-color: green;
+        border-radius: 50%;
+    }
+    
+    body .left ul li image {
+        top: 50%;
+        right: 0;
+    }
+    
+    body .left ul li img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    
+    .right {
+        background-color: #f0f2f5;
+        width: 250px;
+    }
+    
+    .right ul {
+        text-align: right;
+    }
+    
+    .right ul li {
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+    .right ul li:hover {
+        background-color: #eee;
+    }
+    
+    .postsbox {
+        width: 600px;
+        background-color: #ffffff;
+        position: relative;
+        border-radius: 10px;
+        margin: auto;
+    }
+    
+    .postsbox input {
+        display: inline-block;
+        width: 90%;
+        padding: 10px;
+        border-radius: 30px;
+    }
+    
+    .postsbox image {
+        width: 20%;
+        padding-top: 10px;
+    }
+    
+    .postsbox .line {
+        background-color: black;
+        width: 90%;
+        height: 1px;
+        position: relative;
+        top: 10px;
+        margin: auto;
+    }
+    
+    .postsbox article {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .postsbox article span {
+        display: block;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    
+    .postsbox article span:hover {
+        background-color: var(--maincolor);
+    }
+    /**/
+    
+    .parent {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .haha {
+        width: 150px;
+        height: 250px;
+        background-image: url('../images/162571314_491647838909966_1836882666797699591_n.jpg');
+        background-size: cover;
+        position: relative;
+        font-size: 20px;
+        color: wheat;
+        cursor: pointer;
+    }
+    
+    .haha p {
+        position: absolute;
+        left: 50px;
+        bottom: 10px;
+    }
+    
+    .haha span {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-image: url('../images/zayed.jpg');
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-size: cover;
+    }
+    
+    .posts {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .posts i {
+        font-size: 30px;
+    }
+    
+    .posts .onee {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    
+    .posts .onee .name {
+        position: absolute;
+        right: 60px;
+        top: 10px;
+    }
+    
+    .posts img {
+        width: 600px;
+    }
+    
+    .posts button {
+        display: block;
+        cursor: pointer;
+    }
+    
+    .posts .btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    
+    .posts .btn button {
+        padding: 10px;
+        border: none;
+    }

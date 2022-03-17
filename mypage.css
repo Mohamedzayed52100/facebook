@@ -1,0 +1,223 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 5px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    height: 5000px;
+}
+
+
+/*staat photobook*/
+
+.photobook {
+    background-image: url('../images/zayed.jpg');
+    background-size: cover;
+    height: 55vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 1200px;
+    margin: auto;
+    position: relative;
+    cursor: pointer;
+}
+
+.photobook span {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    padding: 10px;
+    color: black;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.info .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info .container .two img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    top: -50px;
+    border: 2px solid white;
+}
+
+.info .container .two i {
+    position: relative;
+    top: -70px;
+    left: 44px;
+    z-index: 10;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.info .container button {
+    display: inline-block;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+}
+
+.info .container button i {
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.info .container .btn1 {
+    background-color: #e4e6eb;
+    color: black;
+}
+
+.info .container .btn2 {
+    background-color: #1b74e4;
+    color: white;
+    margin-left: 10px;
+}
+
+.container .three img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.container .three {
+    position: relative;
+    top: -20px;
+    left: 190px;
+    cursor: pointer;
+}
+
+.container .three img:not(.img) {
+    margin-left: -15px;
+}
+
+.underinfo .container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    color: #838588;
+    border-top: 1px solid black;
+}
+
+.underinfo .container .one,
+.underinfo .container .two {
+    margin-top: 15px;
+}
+
+.underinfo .container .one {
+    background-color: #e4e6eb;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 9px;
+}
+
+.underinfo .container ul {
+    display: flex;
+    color: #838588;
+    align-items: center;
+}
+
+.underinfo .container ul li {
+    margin-right: 15px;
+}
+
+.underinfo .container ul li a {
+    display: block;
+}
+
+.active {
+    color: #3183f0;
+    border-bottom: 2px solid #3183f0;
+}
+
+.underinfo .container ul li .more {
+    position: relative;
+}
+
+.underinfo .container ul li .more::after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.forbody {
+    background-color: #f0f2f5;
+}
+
+.forbody .container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.forbody .container .left {
+    width: 59%;
+}
+
+.forbody .container .left .posts {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #fff;
+    border-bottom: 1px solid rgb(5, 5, 5);
+    border-radius: 5px 0 0 5px;
+}
+
+.forbody .container .left .posts img,
+.forbody .container .left .posts input {
+    display: inline-block;
+}
+
+.forbody .container .left .posts input {
+    width: 80%;
+    background-color: #f0f2f5;
+}
+
+.forbody .container .left .posts img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.forbody .container .right {
+    width: 39%;
+    background-color: #3183f0;
+}
+
+.forbody .container .left .gbtn {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    border-radius: 0 5px 5px 0;
+}
+
+.forbody .container .left .gbtn {
+    background-color: #fff;
+}
+
+.forbody .container .left .gbtn p {
+    width: calc(100%/3);
+}
